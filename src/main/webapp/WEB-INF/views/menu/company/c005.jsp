@@ -11,6 +11,7 @@
     <title>찾아오시는 길</title>
 </head>
 <body>
-
+    <div class = "container">
+    </div>
 </body>
 </html>

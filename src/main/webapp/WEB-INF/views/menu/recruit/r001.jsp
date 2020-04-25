@@ -8,9 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>피플인비즈 채용</title>
 </head>
 <body>
-
+    <div class = "container">
+    </div>
 </body>
 </html>

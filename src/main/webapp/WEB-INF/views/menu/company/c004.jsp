@@ -11,6 +11,7 @@
     <title>조직구성</title>
 </head>
 <body>
-
+    <div class = "container">
+    </div>
 </body>
 </html>

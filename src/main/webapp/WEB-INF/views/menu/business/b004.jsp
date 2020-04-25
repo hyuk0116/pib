@@ -11,6 +11,7 @@
     <title>고객사</title>
 </head>
 <body>
-
+    <div class = "container">
+    </div>
 </body>
 </html>
