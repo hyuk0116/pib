@@ -10,18 +10,51 @@
 <head>
     <meta charset="UTF-8">
     <title>피플인비즈</title>
+    <script type="text/javascript" src="/pib/resources/js/swiper/swiper.min.js"></script>
+    <link href = "/pib/resources/css/swiper.min.css" rel = "stylesheet" type = "text/css"/>
+    <style>
+        .swiper-container-position{
+            position: relative;
+            z-index: -1;
+        }
+        .swiper-wrapper-height{
+            height: 450px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            initSwiper();
+        });
+    </script>
 </head>
 <body>
     <div class="menu-btn">
         <i class="fas fa-bars fa-2x"></i>
     </div>
     <div class="container">
-        <!-- Showcase -->
-        <div class="showcase" style="margin-top: 77px;">
-            <h2>People In Biz</h2>
-            <p>
-                피플인비즈는 고객이 원하는 곳에 항상 함께합니다
-            </p>
+        <div class="swiper-container swiper-container-position">
+            <div class="swiper-wrapper swiper-wrapper-height">
+                <div class="showcase swiper-slide" style="background: url('/pib/resources/img/main_back1.jpg') no-repeat center center/cover;">
+                    <h2>People In Biz</h2>
+                    <p>
+                        피플인비즈는 고객이 원하는 곳에 항상 함께합니다
+                    </p>
+                </div>
+                <div class="showcase swiper-slide" style="background: url('/pib/resources/img/main_back2.png') no-repeat center center/cover;">
+                    <h2>People In Biz</h2>
+                    <p>
+                        피플인비즈는 고객이 원하는 곳에 항상 함께합니다
+                    </p>
+                </div>
+                <div class="showcase swiper-slide" style="background: url('/pib/resources/img/main_back3.png') no-repeat center center/cover;">
+                    <h2>People In Biz</h2>
+                    <p>
+                        피플인비즈는 고객이 원하는 곳에 항상 함께합니다
+                    </p>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
         </div>
         <!-- Home cards 1 -->
         <section class="home-cards">

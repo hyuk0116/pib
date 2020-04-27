@@ -20,8 +20,8 @@
         <jsp:include page="nav.jsp"/>
         <%-- page --%>
         <jsp:include page="${pageName}.jsp"/>
-    </div>
         <%-- footer --%>
-    <jsp:include page="footer.jsp"/>
+        <jsp:include page="footer.jsp"/>
+    </div>
 </body>
 </html>
