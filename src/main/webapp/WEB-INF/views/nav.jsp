@@ -24,6 +24,7 @@
         </script>
     </header>
     <body>
+        <div class="main-back"></div>
         <nav class="main-menu">
             <a href="/pib/"><img src="/pib/resources/img/logo.png" alt="piblogo" class="logo"></a>
             <ul class="main-nav">

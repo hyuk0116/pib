@@ -12,9 +12,6 @@
     <meta charset="UTF-8">
 </head>
 <body>
-    <div class="menu-btn">
-        <i class="fas fa-bars fa-2x"></i>
-    </div>
     <div class="container">
         <%-- Nav --%>
         <jsp:include page="nav.jsp"/>

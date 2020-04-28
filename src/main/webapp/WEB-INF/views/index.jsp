@@ -18,7 +18,7 @@
             z-index: -1;
         }
         .swiper-wrapper-height{
-            height: 450px;
+            height: 600px;
         }
     </style>
     <script type="text/javascript">
@@ -28,71 +28,66 @@
     </script>
 </head>
 <body>
-    <div class="menu-btn">
-        <i class="fas fa-bars fa-2x"></i>
-    </div>
-    <div class="container">
-        <div class="swiper-container swiper-container-position">
-            <div class="swiper-wrapper swiper-wrapper-height">
-                <div class="showcase swiper-slide" style="background: url('/pib/resources/img/main_back1.jpg') no-repeat center center/cover;">
-                    <h2>People In Biz</h2>
-                    <p>
-                        피플인비즈는 고객이 원하는 곳에 항상 함께합니다
-                    </p>
-                </div>
-                <div class="showcase swiper-slide" style="background: url('/pib/resources/img/main_back2.png') no-repeat center center/cover;">
-                    <h2>People In Biz</h2>
-                    <p>
-                        피플인비즈는 고객이 원하는 곳에 항상 함께합니다
-                    </p>
-                </div>
-                <div class="showcase swiper-slide" style="background: url('/pib/resources/img/main_back3.png') no-repeat center center/cover;">
-                    <h2>People In Biz</h2>
-                    <p>
-                        피플인비즈는 고객이 원하는 곳에 항상 함께합니다
-                    </p>
-                </div>
+    <div class="swiper-container swiper-container-position" style="margin-top: 77px">
+        <div class="swiper-wrapper swiper-wrapper-height">
+            <div class="showcase swiper-slide" style="background: url('/pib/resources/img/main_back1.jpg') no-repeat center center/cover;">
+                <h2>People In Biz</h2>
+                <p>
+                    피플인비즈는 고객이 원하는 곳에 항상 함께합니다
+                </p>
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
+            <div class="showcase swiper-slide" style="background: url('/pib/resources/img/main_back2.png') no-repeat center center/cover;">
+                <h2>People In Biz</h2>
+                <p>
+                    피플인비즈는 고객이 원하는 곳에 항상 함께합니다
+                </p>
+            </div>
+            <div class="showcase swiper-slide" style="background: url('/pib/resources/img/main_back3.png') no-repeat center center/cover;">
+                <h2>People In Biz</h2>
+                <p>
+                    피플인비즈는 고객이 원하는 곳에 항상 함께합니다
+                </p>
+            </div>
         </div>
-        <!-- Home cards 1 -->
-        <section class="home-cards">
-            <div>
-                <a href="/pib/business/b001"><img src="/pib/resources/img/business.png" alt="business"></a>
-                <h3> Best business partner</h3>
-                <p>고객과 함께하는 맞춤형 IT 비즈니스 <br>서비스를 경험해보세요.</p>
-                <a href="/pib/business/b001">Learn More <i class="fas fa-chevron-right"></i></a>
-            </div>
-            <div>
-                <a href="/pib/solution/s001"><img src="/pib/resources/img/solution.jpg" alt="solution" /></a>
-                <h3>Expert of IT solution</h3>
-                <p>
-                    IT 전문가로 구성된 PIB팀의 솔루션. <br>
-                    경영혁신을 원하는 회사의 It item.
-                </p>
-                <a href="/pib/solution/s001">Learn More <i class="fas fa-chevron-right"></i></a>
-            </div>
-            <div>
-                <a href="/pib/recruit/r001"><img src="/pib/resources/img/recruit.jpg" alt="recruit" /></a>
-                <h3>Always waiting for you</h3>
-                <p>
-                    능력을 마음껏 발휘할 수 있는 곳. <br>
-                    PeopleInBiz가 당신을 기다립니다. <br>
-
-                </p>
-                <a href="/pib/recruit/r001">Learn More <i class="fas fa-chevron-right"></i></a>
-            </div>
-            <div>
-                <a href="/pib/customer/cs001"><img src="/pib/resources/img/customer.jpg" alt="customer"/></a>
-                <h3>The highest satisfaction</h3>
-                <p>
-                    고객 만족을 최우선 목표로,<br>
-                    오직 고객만 바라보는 PIB입니다.
-                </p>
-                <a href="/pib/customer/cs001">Learn More <i class="fas fa-chevron-right"></i></a>
-            </div>
-        </section>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
     </div>
+    <!-- Home cards 1 -->
+    <section class="home-cards" style="">
+        <div>
+            <a href="/pib/business/b001"><img src="/pib/resources/img/business.png" alt="business"></a>
+            <h3> Best business partner</h3>
+            <p>고객과 함께하는 맞춤형 IT 비즈니스 <br>서비스를 경험해보세요.</p>
+            <a href="/pib/business/b001">Learn More <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div>
+            <a href="/pib/solution/s001"><img src="/pib/resources/img/solution.jpg" alt="solution" /></a>
+            <h3>Expert of IT solution</h3>
+            <p>
+                IT 전문가로 구성된 PIB팀의 솔루션. <br>
+                경영혁신을 원하는 회사의 It item.
+            </p>
+            <a href="/pib/solution/s001">Learn More <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div>
+            <a href="/pib/recruit/r001"><img src="/pib/resources/img/recruit.jpg" alt="recruit" /></a>
+            <h3>Always waiting for you</h3>
+            <p>
+                능력을 마음껏 발휘할 수 있는 곳. <br>
+                PeopleInBiz가 당신을 기다립니다. <br>
+
+            </p>
+            <a href="/pib/recruit/r001">Learn More <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div>
+            <a href="/pib/customer/cs001"><img src="/pib/resources/img/customer.jpg" alt="customer"/></a>
+            <h3>The highest satisfaction</h3>
+            <p>
+                고객 만족을 최우선 목표로,<br>
+                오직 고객만 바라보는 PIB입니다.
+            </p>
+            <a href="/pib/customer/cs001">Learn More <i class="fas fa-chevron-right"></i></a>
+        </div>
+    </section>
 </body>
 </html>

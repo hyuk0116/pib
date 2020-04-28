@@ -12,41 +12,39 @@
     <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=x7ywbrwzjs"></script>
 </head>
 <body>
-    <div class="menu-container" style="height: 400px">
-        S
-        sA
-        SA
-        sa
-        Sa
-        sA
-        Sa
-        sA
-        Sa
-        sa
-        SA
-        sa
-        SS
-        as
-        aS
-        sa
-        S
-
+    <div class="menu-container">
     </div>
 
-    <div id="map" style="width:600px;height:400px;margin: 10px auto;"></div>
+    <div id="map"></div>
 
     <script>
         var mapOptions = {
-            center: new naver.maps.LatLng(37.5147657, 126.8973946),
+            center: new naver.maps.LatLng(37.514490, 126.899436),
             zoom: 16
         };
 
         var map = new naver.maps.Map('map', mapOptions);
 
         var marker = new naver.maps.Marker({
-            position: new naver.maps.LatLng(37.5147657, 126.8973946),
+            position: new naver.maps.LatLng(37.514490, 126.899436),
             map: map
+        })
+
+        var contentString = [
+            '<div class="iw_inner" style="padding: 4px ">',
+            '   <h4>㈜피플인비즈</h4>',
+            '   <p>에이스하이테크시티<br>',
+            '       1동 1208호<br>',
+            '   </p>',
+            '</div>'
+        ].join('');
+
+        var infowindow = new naver.maps.InfoWindow({
+            content: contentString
         });
+
+        infowindow.open(map, marker);
+
     </script>
 </body>
 </html>
