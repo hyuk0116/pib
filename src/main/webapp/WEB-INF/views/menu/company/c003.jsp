@@ -1,17 +1,9 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: naver
-  Date: 2019-08-11
-  Time: 19:05
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>경영비전</title>
-</head>
-<body>
-    <div class = "container">
+<div class="menu-container">
+    <span style = "font-size: 1.5em; font-weight: 700;">
+        경영비전
+    </span>
+    <div style="display: flex; justify-content: center;">
+        <img src="/pib/resources/img/vision.png" alt = "경영비전" style = "width: 50%; margin-top: 50px">
     </div>
-</body>
-</html>
+</div>
