@@ -99,20 +99,20 @@ ul {
 .sub-nav {
     display: none;
     position: absolute;
-    height: 266px;
-    margin-top: 20px;
-    padding-top: 5px;
+    height: 215px;
+    padding-top: 25px;
     z-index: 99;
-    width: 100%;
+    width: 160px;
 }
 
 .sub-nav > ul {
     flex-direction: column;
+    margin-top: 7px;
 }
 
 .sub-nav ul li {
-    padding: 15px 0px 2px 0px;
-    width: 140px;
+    padding: 8px 0px;
+    width: 150px;
 }
 
 .sub-nav ul li a{
@@ -120,6 +120,7 @@ ul {
     font-weight: 500;
     font-size: 14px;
     text-decoration: none;
+    display: block;
 }
 
 .sub-nav ul li a:hover{
@@ -127,7 +128,7 @@ ul {
 }
 
 .sub-nav ul li a.subon{
-    color: #766FA9;
+    color: darkgray;
 }
 
 .right-menu ul li {
@@ -194,6 +195,12 @@ ul {
     text-transform: uppercase;
     font-weight: bold;
 }
+
+.subtitle{
+    margin-left: 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
 /*c001*/
 /* headline */
 .headline{
@@ -212,11 +219,20 @@ ul {
 }
 
 .hello{
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 
+.ceofont{
+    font-size: 16px; font-weight: 400;
+}
 /*c002*/
-
+#table {display: table; align-content: center; width: 80%; margin-bottom: 100px;}
+.row {display: table-row;}
+.cell {display: table-cell; padding: 3px; border-bottom: 1px solid #DDD; font-size: 16px;}
+.col1 {width: 40%;}
+.col2 {width: 40%;}
+.col3 {width: 40%;}
+.col4 {width: 40%;}
 /*c005*/
 #map{
     width:600px;
@@ -227,7 +243,10 @@ ul {
 .home-cards a:hover i {
     margin-left: 10px;
 }
-
+/*r001*/
+.recruit{
+    margin-left: 150px;
+}
 /* Footer */
 .footer {
     background: #f2f2f2;

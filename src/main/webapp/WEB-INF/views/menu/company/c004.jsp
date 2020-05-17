@@ -1,17 +1,11 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: naver
-  Date: 2019-08-11
-  Time: 19:05
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>조직구성</title>
-</head>
-<body>
-    <div class = "container">
+<div class = "menu-container">
+    <div class="subtitle" style="margin-bottom: 100px;">
+        <span style = "font-size: 24px; font-weight: 700;">
+            조직구성도
+        </span>
     </div>
-</body>
-</html>
+    <div style="display: flex; justify-content: center; margin-bottom: 150px;">
+        <img src="/pib/resources/img/composition.PNG" alt = "조직구성도" style = "width: 65%;">
+    </div>
+</div>

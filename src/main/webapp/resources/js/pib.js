@@ -8,11 +8,13 @@ function initNav(){
         }else{
             hideNav();
         }
-    }).on("mouseleave", hideNav);
+    });
+
+    $(".bg").on("mouseleave", hideNav);
 }
 
 function hideNav() {
-    $(".sub-nav, .bg").stop().slideUp(300);
+        $(".sub-nav, .bg").stop().slideUp(300);
 }
 
 function initEvent() {
