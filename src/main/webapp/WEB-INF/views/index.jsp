@@ -28,7 +28,7 @@
     </script>
 </head>
 <body>
-    <div class="swiper-container swiper-container-position" style="margin-top: 77px">
+    <div class="swiper-container swiper-container-position" style="margin-top: 60px">
         <div class="swiper-wrapper swiper-wrapper-height">
             <div class="showcase swiper-slide" style="background: url('/pib/resources/img/main_back1.jpg') no-repeat center center/cover;">
                 <h2>People In Biz</h2>
