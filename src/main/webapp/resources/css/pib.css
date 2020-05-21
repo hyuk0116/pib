@@ -1,3 +1,11 @@
+@charset "UTF-8";
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 ::selection{
     background-color: #766FA9;
     color: white;
@@ -14,12 +22,13 @@ a{
     text-decoration: none;
 }
 body {
-    font-family: 'NotoSans Light,Malgun Gothic,맑은 고딕,Apple SD Gothic Neo,돋움,dotum, sans-serif';
+    font-family: "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
     background: #fff;
     color: #000;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 1.5;
 }
+
 ul {
     list-style: none;
 }
@@ -228,11 +237,48 @@ ul {
 /*c002*/
 #table {display: table; align-content: center; width: 70%; margin-bottom: 100px;}
 .row {display: table-row;}
-.cell {display: table-cell; padding: 3px; font-size: 16px;}
-.col1 {width: 10%; font-weight: bold;}
+/*.cell {display: table-cell; padding: 3px; font-size: 16px;}*/
+.col1 {margin-right: 40px; font-weight: bold;}
 .col2 {width: 20%;}
-.col3 {width: 40%;}
-.col4 {width: 40%;}
+caption {
+    display: table-caption;
+    text-align: -webkit-center;
+    text-indent: -9999px;
+    font-size: 0;
+}
+table {
+    margin: auto;
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: grey;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.table tr:first-child {
+    border-top: 2px solid #333;
+}
+.table th {
+    height: 56px;
+    border-bottom: 1px solid #efefef;
+    font-family: "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+    /*"NanumSquare-B", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;*/
+    font-size: 15px;
+    color: #333;
+    text-align: left;
+}
+
+.table td {
+    height: 56px;
+    border-bottom: 1px solid #efefef;
+    font-size: 15px;
+    color: #606167;
+    letter-spacing: -0.1px;
+}
+
 /*c005*/
 #map{
     width:600px;

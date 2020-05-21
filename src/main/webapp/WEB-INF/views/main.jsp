@@ -9,7 +9,11 @@
 <%@taglib uri="http://java.sun.com/jstl/core" prefix="c" %>
 <html>
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link href = "/pib/resources/css/pib.css?version=${version}" rel = "stylesheet" type = "text/css"/>
 </head>
 <body>
     <div class="container">
