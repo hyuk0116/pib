@@ -40,6 +40,22 @@
                 <th>연락처</th>
                 <td>TEL : 6309 - 6880   &nbsp;    FAX : 6309 - 6881</td>
             </tr>
+            <tr>
+                <th>회사설립일</th>
+                <td>2014년 2월 07일</td>
+            </tr>
+            <tr>
+                <th>자본금</th>
+                <td>50,000,000원</td>
+            </tr>
+            <tr>
+                <th>사업내용</th>
+                <td>IT Outsourcing 및 EIS 솔루션 및 분석 툴 제공 <br>
+
+                    마이그레이션 솔루션 및 컨설팅 <br>
+
+                    다양한 산업 경험의 인력을 통한 시스템 개발 및 솔루션 개발</td>
+            </tr>
         </tbody>
     </table>
     <%--<div id="table" style="margin: auto;">

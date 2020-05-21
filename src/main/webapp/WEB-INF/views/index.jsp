@@ -32,19 +32,19 @@
         <div class="swiper-wrapper swiper-wrapper-height">
             <div class="showcase swiper-slide" style="background: url('/pib/resources/img/main_back1.jpg') no-repeat center center/cover;">
                 <h2>People In Biz</h2>
-                <p>
+                <p style="font-size: 14px;">
                     피플인비즈는 고객이 원하는 곳에 항상 함께합니다
                 </p>
             </div>
-            <div class="showcase swiper-slide" style="background: url('/pib/resources/img/main_back2.png') no-repeat center center/cover;">
+            <div class="showcase swiper-slide" style="background: url('/pib/resources/img/main_back2.jpg') no-repeat center center/cover;">
                 <h2>People In Biz</h2>
-                <p>
+                <p style="font-size: 14px;">
                     피플인비즈는 고객이 원하는 곳에 항상 함께합니다
                 </p>
             </div>
-            <div class="showcase swiper-slide" style="background: url('/pib/resources/img/main_back3.png') no-repeat center center/cover;">
+            <div class="showcase swiper-slide" style="background: url('/pib/resources/img/main_back3.jpg') no-repeat center center/cover;">
                 <h2>People In Biz</h2>
-                <p>
+                <p style="font-size: 14px;">
                     피플인비즈는 고객이 원하는 곳에 항상 함께합니다
                 </p>
             </div>
@@ -53,7 +53,7 @@
         <div class="swiper-pagination"></div>
     </div>
     <!-- Home cards 1 -->
-    <section class="home-cards" style="">
+    <section class="home-cards">
         <div>
             <a href="/pib/business/b001"><img src="/pib/resources/img/business.png" alt="business"></a>
             <h3> Best business partner</h3>

@@ -1,23 +1,32 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div class="menu-container">
-</div>
-<div class = "companymap" style="margin-bottom: 100px; text-align: center;">
-    <span style = "font-size: 24px; font-weight: 700;">
-        오시는 길
-    </span>
-</div>
-<div style="margin-bottom: 100px;">
-    <p style="font-size: 16px; font-weight: 500; text-align: center">
-        <span style="font-size: 16px; font-weight: 700; text-align: center">Address &nbsp;</span>
-        서울시 영등포구 경인로 775, 1동 1208호(문래동3가, 에이스하이테크시티)</p>
-    <br>
-    <p style="font-size: 16px; font-weight: 500; text-align: center; margin-right: 400px;">
-        <span style="font-size: 16px; font-weight: 700; text-align: center; margin-right: 40px;">Tel &nbsp;</span>
-        02 - 6309 - 6880</p>
-    <br>
-    <p style="font-size: 16px; font-weight: 500; text-align: center; margin-right: 400px; ">
-        <span style="font-size: 16px; font-weight: 700; text-align: center; margin-right: 37px;">Fax &nbsp;</span>
-        02 - 6309 - 6881</p>
+    <div class = "subtitle" style="margin-bottom: 50px;">
+        <span style = "font-size: 22px; font-weight: 700;">
+            오시는 길
+        </span>
+    </div>
+    <div style="margin-bottom: 50px;">
+        <table class="table">
+            <caption>회사소개</caption>
+            <colgroup>
+                <col style="width: 160px">
+                <col style="max-width: 800px">
+            </colgroup>
+            <tbody>
+            <tr style="border-top: 0px;">
+                <th>Address</th>
+                <td>서울시 영등포구 경인로 775, 1동 1208호 (문래동 3가, 에이스하이테크시티)</td>
+            </tr>
+            <tr>
+                <th>Tel</th>
+                <td>02-6309-6880</td>
+            </tr>
+            <tr>
+                <th>Fax</th>
+                <td>02-6309-6881</td>
+            </tbody>
+        </table>
+    </div>
 </div>
 <div id="map" style="margin-bottom: 150px;"></div>
 

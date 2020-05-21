@@ -33,8 +33,8 @@
                             <li><a id = "c001" href="/pib/company/c001">CEO인사말</a></li>
                             <li><a id = "c002" href="/pib/company/c002">회사소개</a></li>
                             <li><a id = "c003" href="/pib/company/c003">경영비전</a></li>
-                            <li><a id = "c004" href="/pib/company/c004">조직구성</a></li>
-                            <li><a id = "c005" href="/pib/company/c005">찾아오시는 길</a></li>
+                            <li><a id = "c004" href="/pib/company/c004">조직도</a></li>
+                            <li><a id = "c005" href="/pib/company/c005">오시는 길</a></li>
                         </ul>
                     </div>
                 </li>
