@@ -3,8 +3,7 @@
  <html>
     <header>
         <script type="text/javascript" src="/pib/resources/js/jquery/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="/pib/resources/js/pib.js?aa"></script>
-        <link href = "/pib/resources/css/pib.css?after2" rel = "stylesheet" type = "text/css"/>
+        <script type="text/javascript" src="/pib/resources/js/pib.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
         <script type="text/javascript">
