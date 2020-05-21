@@ -34,6 +34,6 @@ public class MenuController {
      * @return
      */
     private String version() {
-        return LocalDateTime.now().format(DateTimeFormatter.ISO_DATE_TIME); // @TODO BASIC_ISO_DATE
+        return LocalDateTime.now().format(DateTimeFormatter.ISO_DATE_TIME); // TODO BASIC_ISO_DATE
     }
 }
