@@ -4,10 +4,10 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
-		<property name="driverClassName" value="${Globals.oracle.driverClassName}" />
-		<property name="url" value="${Globals.oracle.url}" />
-		<property name="username" value="${Globals.oracle.username}" />
-		<property name="password" value="${Globals.oracle.password}" />
+		<property name="driverClassName" value="${Globals.mariadb.driverClassName}" />
+		<property name="url" value="${Globals.mariadb.url}" />
+		<property name="username" value="${Globals.mariadb.username}" />
+		<property name="password" value="${Globals.mariadb.password}" />
 	</bean>	
 	
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">

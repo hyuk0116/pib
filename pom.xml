@@ -117,10 +117,10 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>javax.servlet.jsp</groupId>
+			<groupId>javax.servlet.jsp</groupId><scope>provided</scope>
 			<artifactId>jsp-api</artifactId>
 			<version>2.1</version>
-			<scope>provided</scope>
+
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -179,12 +179,6 @@
 			<artifactId>commons-dbcp</artifactId>
 			<version>1.4</version>
 		</dependency>
-		
-		<dependency>
-			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc6</artifactId>
-			<version>11.2.0.4.0-atlassian-hosted</version>
-        </dependency>
         
         <!-- util -->
 		<dependency>
@@ -204,6 +198,14 @@
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client -->
+		<dependency>
+			<groupId>org.mariadb.jdbc</groupId>
+			<artifactId>mariadb-java-client</artifactId>
+			<version>2.6.0</version>
+		</dependency>
+
 	</dependencies>
 	
     <build>

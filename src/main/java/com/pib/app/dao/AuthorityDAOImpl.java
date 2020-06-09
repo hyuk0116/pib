@@ -1,13 +1,16 @@
 package com.pib.app.dao;
 
 
+import com.pib.app.vo.Authority;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-@Repository("helloDAO")
-public class HelloDAOImpl implements HelloDAO {
-	final String NAMESPACE = HelloDAO.class.getName();
+import java.util.List;
+
+@Repository("authorityDAO")
+public class AuthorityDAOImpl implements AuthorityDAO {
+	final String NAMESPACE = AuthorityDAO.class.getName();
 	
 	@Autowired
 	private SqlSession sqlSession;
@@ -17,7 +20,7 @@ public class HelloDAOImpl implements HelloDAO {
 	}
 
 	@Override
-	public String hello() {
-		return sqlSession.selectOne(this.NAMESPACE + ".selectHello");
+	public List<Authority> selectAuthority(String username) {
+		return sqlSession.selectList(this.NAMESPACE + ".selectAuthority", username);
 	}
 }

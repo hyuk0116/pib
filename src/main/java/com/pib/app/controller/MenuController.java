@@ -9,8 +9,20 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-@Controller
+@Controller("menuController")
 public class MenuController {
+   /* @Autowired
+    private LoginService loginService;
+
+    public void setLoginService(LoginService loginService) {
+        this.loginService = loginService;
+    }*/
+   /*@Autowired
+   private UserDetailsService userDetailsService;
+
+    public void setUserDetailsService(UserDetailsService userDetailsService) {
+        this.userDetailsService = userDetailsService;*/
+
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index(Model model) {
         model.addAttribute("pageName", "index");
@@ -28,6 +40,29 @@ public class MenuController {
 
         return "main";
     }
+
+//    @RequestMapping(value = "login/{id}", method = RequestMethod.GET)
+//    @ResponseBody
+//    public LoginVO login(@PathVariable("id") String id) {
+//        return loginService.login(id);
+//    }
+
+    /*@RequestMapping(value = "login/{id}", method = RequestMethod.GET)
+    @ResponseBody
+    public UserDetailsVO loginCheck(@PathVariable("id") String id){
+        return userDetailsService.loginCheck(id);
+        }*/
+
+    @RequestMapping(value="loginPage")
+    public String login() throws Exception {
+        return "loginPage";
+    }
+
+    @RequestMapping(value="admin/management")
+    public String loginSuccess() throws Exception {
+        return "admin/management";
+    }
+
 
     /**
      * resource version

@@ -17,15 +17,25 @@ public class CommonInterceptor extends HandlerInterceptorAdapter {
 	}
 
 	@Override
-	public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
+	public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) {
 		logger.info("call postHandle");
-		super.postHandle(request, response, handler, modelAndView);
+
+		try {
+			super.postHandle(request, response, handler, modelAndView);
+		} catch (Exception e) {
+			logger.debug(e.getMessage());
+		}
 	}
 
 	@Override
-	public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
+	public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) {
 		logger.info("call afterCompletion");
-		super.afterCompletion(request, response, handler, ex);
+
+		try {
+			super.afterCompletion(request, response, handler, ex);
+		} catch (Exception e) {
+			logger.debug(e.getMessage());
+		}
 	}
 	
 }
