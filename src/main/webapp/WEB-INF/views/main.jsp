@@ -14,7 +14,13 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Cache-Control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <link rel="stylesheet" src = "/pib/resources/css/pib.css?version=${version}" />
+    <script type="application/javascript" src="/pib/resources/js/swiper/swiper.min.js"></script>
+    <script type="application/javascript" src="/pib/resources/js/jquery/jquery-3.3.1.min.js"></script>
+    <script type="application/javascript" src="/pib/resources/js/pib.js"></script>
+    <link rel="stylesheet" href = "/pib/resources/css/pib.css?version=${version}" />
+    <link rel="stylesheet" href = "/pib/resources/css/swiper.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
 </head>
 <body>
     <div class="container">

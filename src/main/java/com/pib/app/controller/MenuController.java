@@ -31,7 +31,7 @@ public class MenuController {
         return "main";
     }
 
-    @RequestMapping(value = "{category}/{page}", method = RequestMethod.GET)
+    @RequestMapping(value = "menu/{category}/{page}", method = RequestMethod.GET)
     public String page(@PathVariable("category") String category, @PathVariable("page") String page,  Model model) {
         model.addAttribute("pageName", String.format("menu/%s/%s", category, page));
         model.addAttribute("category", category);
@@ -41,7 +41,7 @@ public class MenuController {
         return "main";
     }
 
-    @RequestMapping(value = "{category}/{page}/{pageNo}", method = RequestMethod.GET)
+    @RequestMapping(value = "menu/{category}/{page}/{pageNo}", method = RequestMethod.GET)
     public String qna(@PathVariable("category") String category, @PathVariable("page") String page, @PathVariable("pageNo") Integer pageNo,  Model model) throws Exception {
         List<Qna> list = qnaService.getBoardList(pageNo);
         model.addAttribute("qnaList", list);
