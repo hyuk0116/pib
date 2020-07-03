@@ -1,5 +1,8 @@
 package com.pib.app.controller;
 
+import com.pib.app.service.admin.QnaService;
+import com.pib.app.vo.Qna;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -8,20 +11,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 
 @Controller("menuController")
 public class MenuController {
-   /* @Autowired
-    private LoginService loginService;
 
-    public void setLoginService(LoginService loginService) {
-        this.loginService = loginService;
-    }*/
-   /*@Autowired
-   private UserDetailsService userDetailsService;
+    @Autowired
+    private QnaService qnaService;
 
-    public void setUserDetailsService(UserDetailsService userDetailsService) {
-        this.userDetailsService = userDetailsService;*/
+    public void setQnaService(QnaService qnaService) {
+        this.qnaService = qnaService;
+    }
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index(Model model) {
@@ -41,17 +41,13 @@ public class MenuController {
         return "main";
     }
 
-//    @RequestMapping(value = "login/{id}", method = RequestMethod.GET)
-//    @ResponseBody
-//    public LoginVO login(@PathVariable("id") String id) {
-//        return loginService.login(id);
-//    }
+    @RequestMapping(value = "{category}/{page}/{pageNo}", method = RequestMethod.GET)
+    public String qna(@PathVariable("category") String category, @PathVariable("page") String page, @PathVariable("pageNo") Integer pageNo,  Model model) throws Exception {
+        List<Qna> list = qnaService.getBoardList(pageNo);
+        model.addAttribute("qnaList", list);
 
-    /*@RequestMapping(value = "login/{id}", method = RequestMethod.GET)
-    @ResponseBody
-    public UserDetailsVO loginCheck(@PathVariable("id") String id){
-        return userDetailsService.loginCheck(id);
-        }*/
+        return page(category, page, model);
+    }
 
     @RequestMapping(value="loginPage")
     public String login() throws Exception {
