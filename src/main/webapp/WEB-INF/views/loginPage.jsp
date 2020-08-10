@@ -6,13 +6,20 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html;" charset="UTF-8">
+        <link rel="stylesheet" href = "/pib/resources/css/pib.css?version=${version}" />
     </head>
-    <body>
-        <form:form action="/pib/login" method="post">
-            <input type="text" name="username" placeholder="adminID">
-            <input type="password" name="password" placeholder="adminPW">
-            <button type="submit">Sign in</button>
-        </form:form>
+    <body style="background-color: lavender">
+        <div style="text-align: center; margin-top: 10%">
+
+            <h2>피플인비즈 <br> 관리자 페이지</h2><br>
+
+
+            <form:form action="/pib/login" method="post">
+                <input style="height: 30px; width: 200px;" type="text" name="username" placeholder="아이디"><br><br>
+                <input style="height: 30px; width: 200px;" type="password" name="password" placeholder="비밀번호"><br><br>
+                <button style="height: 30px; width: 200px;" type="submit">로그인</button>
+            </form:form>
+        </div>
 
         <c:if test = "${not empty param.fail}">
             <p><Spring:message code = "login.error"></Spring:message></p>

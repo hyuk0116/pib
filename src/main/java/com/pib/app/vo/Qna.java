@@ -8,23 +8,32 @@ public class Qna {
     private String content;
     private String writer;
     private Date date;
-    private Long from;
-    private Long to;
+    private Integer from;
+    private Integer prevBno;
+    private Integer nextBno;
 
-    public Long getFrom() {
+    public Integer getPrevBno() {
+        return prevBno;
+    }
+
+    public void setPrevBno(Integer prevBno) {
+        this.prevBno = prevBno;
+    }
+
+    public Integer getNextBno() {
+        return nextBno;
+    }
+
+    public void setNextBno(Integer nextBno) {
+        this.nextBno = nextBno;
+    }
+
+    public Integer getFrom() {
         return from;
     }
 
-    public void setFrom(Long from) {
+    public void setFrom(Integer from) {
         this.from = from;
-    }
-
-    public Long getTo() {
-        return to;
-    }
-
-    public void setTo(Long to) {
-        this.to = to;
     }
 
     public Integer getBno() {

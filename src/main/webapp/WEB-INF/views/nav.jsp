@@ -58,27 +58,19 @@
                 <div class = "sub-nav">
                     <ul>
                         <li><a id = "r001" href="/pib/menu/recruit/r001">채용정보</a></li>
-                        <li><a id = "r002" href="/pib/menu/recruit/r002/1">채용문의</a></li>
                     </ul>
                 </div>
             </li>
 
-            <li><a id = "customer" href="/pib/menu/customer/cs001">Customer</a>
+            <li><a id = "customer" href="/pib/menu/customer/cs001/1">Customer</a>
                 <div class = "sub-nav">
                     <ul>
-                        <li><a id = "cs001" href="/pib/menu/customer/cs001">뉴스&공지사항</a></li>
-                        <li><a id = "cs002" href="/pib/menu/customer/cs002">Q&A</a></li>
+                        <li><a id = "cs001" href="/pib/menu/customer/cs001/1">공지사항</a></li>
                     </ul>
                 </div>
             </li>
 
-            <li><a id = "email" href="/pib/menu/email/e001">E-mail</a>
-                <div class = "sub-nav">
-                    <ul>
-                        <li><a id = "e001" href="/pib/menu/email/e001">E-mail</a></li>
-                    </ul>
-                </div>
-            </li>
+            <li><a id = "email" href="mailto:dnjsejzkfldh@naver.com">E-mail</a></li>
         </ul>
         <%--서브메뉴 백그라운드--%>
         <div class = "bg"></div>

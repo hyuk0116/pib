@@ -12,16 +12,34 @@
 					 		, #{writer} )
 	</insert>
 
-    <select id="selectBoard" resultType="com.pib.app.vo.Qna">
+    <select id="selectQnaList" resultType="com.pib.app.vo.Qna">
 		SELECT	bno,
 				title,
 				content,
 				writer,
-				date
-		FROM	qnaboard
+				date,
+				(SELECT MAX(qb_prev.bno)
+				FROM qnaboard qb_prev
+				WHERE qb.bno > qb_prev.bno) AS prevBno
+				,
+				(SELECT MIN(qb_next.bno)
+				FROM qnaboard qb_next
+				WHERE qb_next.bno > qb.bno) AS nextBno
+		FROM	qnaboard qb
 		WHERE	1 = 1
 		<if test="bno != null">
-			AND    bno = #{bno}
+			AND    qb.bno = #{bno}
+		</if>
+		<if test="from != null">
+			ORDER BY bno DESC
+			LIMIT #{from}, 10
 		</if>
 	</select>
+
+	<select id="selectCount" resultType="Integer">
+        SELECT
+            count(*)
+        FROM
+            qnaboard
+    </select>
 </mapper>

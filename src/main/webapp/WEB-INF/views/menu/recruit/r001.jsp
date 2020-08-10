@@ -86,7 +86,7 @@
 
             <li>
                 <ul>
-                    <p style="margin-top: 30px; font-weight: 600;">채용담당자</p>
+                    <p style="margin-top: 30px; font-weight: 600;">채용문의</p>
                     <li class="recruit" style="margin-top:-28px;">연락처 : 6309-6880 &nbsp; Fax : 6309-6881</li>
                     <li class="recruit">담당자 : 최선희대리 (sunnychoi@peopleinbiz.co.kr)</li>
                 </ul>

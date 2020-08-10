@@ -1,6 +1,7 @@
 package com.pib.app.service.admin;
 
 import com.pib.app.dao.QnaDAO;
+import com.pib.app.util.Criteria;
 import com.pib.app.vo.Qna;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,19 +24,23 @@ public class QnaServiceImpl implements QnaService {
     }
 
     @Override
-    public Qna getBoard(Integer bno) throws Exception {
+    public Qna getQna(Integer bno) throws Exception {
         Qna qna = new Qna();
         qna.setBno(bno);
 
-        return qnaDAO.selectBoard(qna);
+        return qnaDAO.selectQna(qna);
     }
 
     @Override
-    public List<Qna> getBoardList(Integer pageNo) throws Exception {
+    public List<Qna> getQnaList(Criteria criteria) throws Exception {
         Qna qna = new Qna();
-        qna.setFrom(0L);
-        qna.setTo(10L);
+        qna.setFrom(criteria.getPageStart());
 
-        return qnaDAO.selectBoardList(qna);
+        return qnaDAO.selectQnaList(qna);
+    }
+
+    @Override
+    public int getCount() {
+        return qnaDAO.selectCount();
     }
 }

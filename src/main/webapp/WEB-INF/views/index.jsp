@@ -74,12 +74,12 @@
         <a href="/pib/menu/recruit/r001">Learn More <i class="fas fa-chevron-right"></i></a>
     </div>
     <div>
-        <a href="/pib/menu/customer/cs001"><img src="/pib/resources/img/customer.jpg" alt="customer"/></a>
+        <a href="/pib/menu/customer/cs001/1"><img src="/pib/resources/img/customer.jpg" alt="customer"/></a>
         <h3>The highest satisfaction</h3>
         <p>
             고객 만족을 최우선 목표로,<br>
             오직 고객만 바라보는 PIB입니다.
         </p>
-        <a href="/pib/menu/customer/cs001">Learn More <i class="fas fa-chevron-right"></i></a>
+        <a href="/pib/menu/customer/cs001/1">Learn More <i class="fas fa-chevron-right"></i></a>
     </div>
 </section>

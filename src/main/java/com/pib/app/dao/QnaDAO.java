@@ -8,7 +8,9 @@ public interface QnaDAO {
 
     void create(Qna qna) throws Exception;
 
-    Qna selectBoard(Qna qna) throws Exception;
+    Qna selectQna(Qna qna) throws Exception;
 
-    List<Qna> selectBoardList(Qna qna) throws Exception;
+    List<Qna> selectQnaList(Qna qna) throws Exception;
+
+    int selectCount();
 }
