@@ -22,7 +22,7 @@
         </div>
 
         <c:if test = "${not empty param.fail}">
-            <p><Spring:message code = "login.error"></Spring:message></p>
+            <p style="text-align: center; color: red;"><Spring:message code = "login.error"></Spring:message></p>
         </c:if>
     </body>
 </html>
