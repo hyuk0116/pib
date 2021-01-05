@@ -48,13 +48,13 @@
 </div>
 <!-- Home cards 1 -->
 <section class="home-cards">
-    <div>
+    <div class = "content-item">
         <a href="/pib/menu/business/b001"><img src="/pib/resources/img/business.png" alt="business"></a>
         <h3> Best business partner</h3>
         <p>고객과 함께하는 맞춤형 IT 비즈니스 <br>서비스를 경험해보세요.</p>
         <a href="/pib/menu/business/b001">Learn More <i class="fas fa-chevron-right"></i></a>
     </div>
-    <div>
+    <div class = "content-item">
         <a href="/pib/menu/solution/s001"><img src="/pib/resources/img/solution.jpg" alt="solution" /></a>
         <h3>Expert of IT solution</h3>
         <p>
@@ -63,7 +63,7 @@
         </p>
         <a href="/pib/menu/solution/s001">Learn More <i class="fas fa-chevron-right"></i></a>
     </div>
-    <div>
+    <div class = "content-item">
         <a href="/pib/menu/recruit/r001"><img src="/pib/resources/img/recruit.jpg" alt="recruit" /></a>
         <h3>Always waiting for you</h3>
         <p>
@@ -73,7 +73,7 @@
         </p>
         <a href="/pib/menu/recruit/r001">Learn More <i class="fas fa-chevron-right"></i></a>
     </div>
-    <div>
+    <div class = "content-item">
         <a href="/pib/menu/customer/cs001/1"><img src="/pib/resources/img/customer.jpg" alt="customer"/></a>
         <h3>The highest satisfaction</h3>
         <p>

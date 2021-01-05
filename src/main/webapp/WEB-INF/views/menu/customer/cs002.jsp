@@ -30,5 +30,9 @@
                 <a class="board-nav-a" href='<c:url value="/menu/customer/cs001/${criteria.page}"/> '>목록</a>
             </li>
         </ul>
+        <ul style="display: flex; flex-direction: row; justify-content: center;">
+            <li style="padding-right: 10px;"><a href="#">수정하기</a></li>
+            <li style="padding-left: 10px;"><a href="#">삭제하기</a></li>
+        </ul>
     </div>
 </div>

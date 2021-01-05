@@ -68,7 +68,7 @@ ul {
     align-items: center;
     justify-content: space-between;
     font-size: 13px;
-    padding: 9px 0px;
+    padding: 9px 0px 0px 0px;
     background-color: white;
     position: fixed;
     top: 0px;
@@ -185,13 +185,32 @@ ul {
 
 /* Home cards */
 .home-cards {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
     grid-gap: 20px;
     width: 1400px;
     left: 0px;
     right: 0px;
     margin: 30px auto;
+}
+
+
+.content-item:nth-child(1){
+    -ms-grid-column: 1;
+}
+
+.content-item:nth-child(2){
+    -ms-grid-column: 3;
+}
+
+.content-item:nth-child(3){
+    -ms-grid-column: 5;
+}
+
+.content-item:nth-child(4){
+    -ms-grid-column: 7;
 }
 
 .home-cards img {

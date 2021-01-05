@@ -77,6 +77,7 @@ public class MenuController {
         return page(category, "cs002", model);
     }
 
+
     /**
      * 게시글 리스트 조회
      * @param category 페이지 카테고리
@@ -118,7 +119,7 @@ public class MenuController {
      * @throws Exception
      */
     @RequestMapping(value="admin/management")
-    public String loginSuccess() throws Exception {
+    public String loginSuccess() throws Exception { //조건 (admin 폼을 통해 들어오면
         return "admin/management";
     }
 

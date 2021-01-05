@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div class = "menu-container">
 
-    <div style="display: flex; justify-content: center; margin-top: -90px; margin-bottom: 100px;">
+    <div style="flex-direction: column; align-items: center; display: flex; justify-content: center; margin-top: -90px; margin-bottom: 100px;">
         <img src="/pib/resources/img/job.jpg" alt="구직">
     </div>
     <div class = "subtitle" style="margin-bottom: 50px;">

@@ -20,7 +20,7 @@
             </div>
             <div id="content" style="background-color: whitesmoke">
                 <ul>
-                    <li><a href="#">공지사항 등록하기</a></li>
+                    <li><a href="/pib/menu/customer/cs001/1">공지사항 등록하기</a></li>
                     <li><a href="#">공지사항 수정하기</a></li>
                     <li><a href="#">공지사항 삭제하기</a></li>
                     <li><a href="#">로그아웃</a></li>

@@ -19,7 +19,7 @@
 
     <div class="main-back"></div>
     <nav class="main-menu">
-        <a href="/pib/"><img src="/pib/resources/img/logo.jpg" alt="piblogo" class="logo"></a>
+        <a href="/pib/"><img src="/pib/resources/img/logo.png" alt="piblogo" class="logo"></a>
         <ul class="main-nav">
             <li><a id = "company" href="/pib/menu/company/c001">Company</a>
                 <div class = "sub-nav">
