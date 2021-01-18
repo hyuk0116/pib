@@ -5,8 +5,6 @@ import com.pib.app.util.Criteria;
 import com.pib.app.vo.Qna;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.servlet.support.JstlUtils;
-
 import java.util.List;
 
 @Service

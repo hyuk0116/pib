@@ -23,9 +23,6 @@
     </c:forEach>
         </tbody>
     </table>
-    <ul style="display: flex; flex-direction: row; justify-content: center;">
-        <li ><a href="#">글쓰기</a></li>
-    </ul>
     <div class="pagination-wrapper">
         <div class="pagination">
             <ul style="display: flex; justify-content: center;">
