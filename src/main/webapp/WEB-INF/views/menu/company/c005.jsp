@@ -30,7 +30,7 @@
 </div>
 <div id="map" style="margin-bottom: 150px;"></div>
 
-<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=x7ywbrwzjs"></script>
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=kydlplnknz"></script>
 <script>
     var mapOptions = {
         center: new naver.maps.LatLng(37.514490, 126.899436),
