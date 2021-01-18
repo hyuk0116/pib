@@ -9,26 +9,32 @@
             <li><fmt:formatDate value="${qna.date}" pattern="yyyy.MM.dd"/></li>
         </ul>
     </div>
-    <div class="board-content" style="width: 65%; margin: auto; padding: 50px 0px; line-height: 3.5em;">
+
+    <div class="board-content" style="width: 65%; font-size: 15px; margin: auto; padding: 50px 0px; line-height: 3.5em;">
         ${qna.content}
     </div>
-    <div class="board-nav" style="width: 70%; margin: auto; padding: 20px; border-top: #766FA9 solid 1px;">
-        <ul style="display: flex; flex-direction: row;">
-            <c:if test="${not empty qna.prevBno}">
-                <li style="width: 5%">
-                    <a class="board-nav-a" href= '<c:url value="/menu/customer/cs002/${criteria.page}/${qna.prevBno}"/>'>이전</a>
-                </li>
-            </c:if>
-            <c:if test="${not empty qna.nextBno}">
-                <li style="width: 90%">
-                    <a class="board-nav-a" href= '<c:url value="/menu/customer/cs002/${criteria.page}/${qna.nextBno}"/>'>다음</a>
-                </li>
-            </c:if>
-            <c:if test="${empty qna.nextBno}">
-                <li style="width: 90%"></li>
-            </c:if>
+
+    <div style="border-top: #766FA9 solid 1px; width: 70%; margin: auto;"></div>
+
+    <div class="board-nav" style="margin: auto; width: 70%;">
+        <ul style="font-size: 16px; padding:10px 10px 0px 10px; display: flex; flex-direction: row">
+            <li style="width: 97%;">
+                <c:if test="${not empty qna.prevBno}">
+                    <span>
+                        <a class="board-nav-a" href= '<c:url value="/menu/customer/cs002/${criteria.page}/${qna.prevBno}"/>'>이전</a>
+                    </span>
+                </c:if>
+                <c:if test="${not empty qna.prevBno and not empty qna.nextBno}">
+                &nbsp;|&nbsp;
+                </c:if>
+                <c:if test="${not empty qna.nextBno}">
+                    <span>
+                        <a class="board-nav-a" href= '<c:url value="/menu/customer/cs002/${criteria.page}/${qna.nextBno}"/>'>다음</a>
+                    </span>
+                </c:if>
+            </li>
             <li>
-                <a class="board-nav-a" href='<c:url value="/menu/customer/cs001/${criteria.page}"/> '>목록</a>
+                <a class="board-nav-a" href='<c:url value="/menu/customer/cs001/${criteria.page}"/>'>목록</a>
             </li>
         </ul>
     </div>
