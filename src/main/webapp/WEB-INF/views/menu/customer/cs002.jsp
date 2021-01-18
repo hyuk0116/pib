@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <div class = "menu-container">
     <div class="board-info" style="border-bottom: #766FA9 solid; width: 70%; margin: auto;">
         <ul style="font-size: 16px; padding:30px 10px 10px 10px; display: flex; flex-direction: row">
@@ -9,7 +10,7 @@
         </ul>
     </div>
     <div class="board-content" style="width: 65%; margin: auto; padding: 50px 0px; line-height: 3.5em;">
-        <span style="font-size: 15px;">${qna.content}</span>
+        ${qna.content}
     </div>
     <div class="board-nav" style="width: 70%; margin: auto; padding: 20px; border-top: #766FA9 solid 1px;">
         <ul style="display: flex; flex-direction: row;">
